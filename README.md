@@ -1,6 +1,6 @@
 # Python-chatGPT
 
-pip3 install openai
+pip3 install openai && pip install python-dotenv
 
 OR 
 
