@@ -20,10 +20,12 @@ while True:
         break    
 
 
-    completion = openai.Completion.create(
-        engine=Engine,
-        prompt=prompt,
-        max_tokens=Max_tokens)
+    completion = openai.ChatCompletion.create(
+        model = 'gpt-3.5-turbo',
+        messages = [
+            {'role': 'user', 'content': prompt}
+        ],
+        temperature = 0
+        )
 
- 
-    print(completion.choices[0].text)
+    print(completion['choices'][0]['message']['content'])
