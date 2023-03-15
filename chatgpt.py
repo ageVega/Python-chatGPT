@@ -5,8 +5,7 @@ from os import environ
 load_dotenv()
 openai.api_key = environ.get('OPENAI_API_KEY')
 
-Engine = "text-davinci-003"
-Max_tokens = 4000
+Modelo = "gpt-3.5-turbo"
 
 while True:
 
@@ -21,7 +20,7 @@ while True:
 
 
     completion = openai.ChatCompletion.create(
-        model = 'gpt-3.5-turbo',
+        model = Modelo,
         messages = [
             {'role': 'user', 'content': prompt}
         ],
