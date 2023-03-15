@@ -7,11 +7,6 @@ OR
 pip3 install -r requirements.txt
 
 
-# Provide API Key
-
-
-
-
 # Alias
 	
 vim ~/.bashrc
