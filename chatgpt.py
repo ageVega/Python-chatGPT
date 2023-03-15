@@ -9,7 +9,7 @@ while True:
     if prompt == "exit":
         break
 
-    completion = openai.Completion.create(engine="code-cushman-001",
+    completion = openai.Completion.create(engine="gpt-3.5-turbo",
                                         prompt=prompt,
                                         max_tokens=4000)
 
